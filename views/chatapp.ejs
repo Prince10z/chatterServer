@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatterApp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+
+    <link rel="stylesheet" , href="/style.css">
+</head>
+
+<body>
+    <div id="BigContainer">
+        <header>
+            <h2 contentEditable role='textbox' aria-multiline='true'>ChitChat</h2>
+        </header>
+
+
+
+        <div id="SmallContainer">
+            <div id="AuthContainer">
+                <label for="username" id="UNameL">Username:</label>
+                <input type="text" id="username" class="authinputs">
+                <div id="resultCon"></div>
+                <label for="roomname" id="RNameL">RoomName:</label>
+                <input type="text" id="roomname" class="authinputs">
+                <button type="submit" style="display: block;" id="joinBtn">Join Room</button>
+            </div>
+            <div id="ChatRoom">
+                <center>
+                    <h3 id="chatroomname"></h3>
+                </center>
+                <div id="ChatScreen">
+                    <div id="LiveUsersContainer">
+                        <div id="liveruseHeading">
+                            <h5>LiveUsers</h5>
+                        </div>
+
+                        <div id="LiveUsers">
+
+                        </div>
+                    </div>
+                    <div id="ChatSection">
+                        <div id="HistoryMsg" class="parent">
+                            <!-- <div class="left-div">
+                                <div class="recievermsg">
+                                    <div class="msgLebel">sender name:</div>
+                                    I am hereasdfasdfkjbasd fsadib
+                                    fjasdbfhbasdfhvasdbfasbhdfasbdflkbasdfjbasjdfhbasdjfhbjasdhasdlkfukasdfhbaskdhflskahdvfasldfsadfjashdjabhsfdlhabsdlfhbasldfjbasldfhb
+                                </div>
+                            </div>
+                            <div class="right-div">
+                                <div class="sendermsg">
+                                    <div class="msgLebel">me:</div>
+                                    I am there
+                                </div>
+                            </div> -->
+
+                        </div>
+                        <div id="typingColumn">
+
+                        </div>
+                        <div id="msgColumn">
+                            <input type="text" placeholder="Send the message" id="msg">
+                            <div id="msgicon">
+                                <i class="fa-solid fa-paper-plane" style="color: #000000;"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+        <script src="/script.js"></script>
+</body>
+
+</html>

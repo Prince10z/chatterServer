@@ -1,0 +1,23 @@
+{
+  "name": "socketioroomfunctionality",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "http": "^0.0.1-security",
+    "mongoose": "^8.5.2",
+    "nodemon": "^3.1.4",
+    "path": "^0.12.7",
+    "socket.io": "^4.7.5"
+  }
+}

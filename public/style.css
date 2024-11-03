@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.negative-text {
+    color: white;
+    /* Or any other base color */
+    mix-blend-mode: difference;
+}
+
+#mainHeading {}
+
+#BigContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    /* background-image: linear-gradient(to bottom right, rgb(0, 124, 128), rgb(51, 6, 67)); */
+}
+
+#SmallContainer {
+    background-color: rgba(9, 4, 4, 0.129);
+
+    width: 650px;
+    height: 450px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    border-radius: 30px;
+    flex-direction: column;
+}
+
+#AuthContainer {
+    width: 80%;
+    height: 40%;
+    /* background-color: rgb(5, 83, 160); */
+    padding-top: 30px;
+    /* Temmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmp*/
+    /* display: none; */
+}
+
+.authinputs {
+    width: 40%;
+    border-width: 2px;
+    border-radius: 8px;
+    height: 20px;
+    border-color: black;
+}
+
+.authinputs:focus {
+
+    /* border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: dotted;
+    border-left-style: none;
+    border-color: transparent; */
+    /* background-color: lightblue; */
+    border-color: white;
+    border-width: 2px;
+    border-radius: 8px;
+}
+
+
+/*********?/*******************/
+header {
+    margin-top: 30px;
+    /* height: 30%; */
+    overflow: hidden;
+    background-image: url('/circle.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 120px 120px;
+    /* width: 300px;
+    height: 300px; */
+    background-color: white;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2 {
+    height: inherit;
+    background: inherit;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: cursive;
+    text-align: center;
+    filter: invert(1);
+    font-size: 60px;
+}
+
+#resCon {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+#resultCon {
+    height: 20px;
+}
+
+#joinBtn {
+    margin-top: 20px;
+    padding: 5px 30px;
+    font-size: large;
+    border-radius: 13px;
+    color: white;
+    background-color: black;
+    font-weight: 700;
+}
+
+/*
+*
+*
+ChatScreen Styles
+*
+*
+*/
+h3 {
+    font-family: cursive;
+
+}
+
+#ChatScreen {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+#LiveUsersContainer {
+
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    height: 350px;
+    margin-left: 40px;
+    margin-right: 30px;
+    border-radius: 20px;
+    /* padding: 30px; */
+}
+
+#liveruseHeading {
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px 0px;
+    color: white;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+#LiveUsers {
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 150px;
+    /* background-color: red; */
+    overflow: scroll;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+
+}
+
+#LiveUsers::-webkit-scrollbar {
+    display: none;
+}
+
+#ChatRoom {
+    /* Temmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmp*/
+    display: none;
+}
+
+#ChatSection {
+    /* position: relative; */
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    /* background-color: aquamarine; */
+}
+
+#HistoryMsg {
+    width: 100%;
+    height: 350px;
+}
+
+#typingColumn {
+    height: 25px;
+    /* background-color: rgb(105, 105, 213); */
+    padding-left: 10px;
+}
+
+#msgColumn {
+    height: 30px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* Use space-between for better alignment */
+    border-radius: 13px;
+    padding: 2px 2px;
+}
+
+#msg {
+    /* border-radius: 13px; */
+    border: none;
+    height: 100%;
+    flex-grow: 1;
+    /* This will make the input field fill the remaining space */
+    overflow: hidden;
+    border-radius: 13px 0 0 13px;
+    /* Adjust border-radius for smooth corners */
+    /* padding: 0px 10px; */
+    /* background-color: aqua; */
+}
+
+#msg:focus {
+    outline: none;
+}
+
+#msgicon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 100%;
+    /* background-color: red; */
+}
+
+
+/* learning */
+.parent {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* background-color: aqua; */
+    padding: 3px;
+    overflow: scroll;
+    flex-direction: column;
+
+}
+
+.parent::-webkit-scrollbar {
+    display: none;
+}
+
+.left-div,
+.right-div,
+.addedUser-div {
+    /* padding: 30px; */
+    /* margin: 30px; */
+    /* max-width: 130px; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.addedUser-div {
+    align-items: center;
+}
+
+.addedUsermsg {
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 50%;
+    margin: 7px 0px;
+    word-wrap: break-word;
+    word-break: break-all;
+    background-color: rgb(151, 204, 151);
+}
+
+.left-div {
+    align-items: start;
+}
+
+.right-div {
+    align-items: end;
+}
+
+.recievermsg,
+.sendermsg {
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 50%;
+    margin: 7px 0px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.recievermsg {
+    background-color: rgb(98, 155, 164);
+}
+
+.sendermsg {
+    background-color: wheat;
+    flex-direction: column;
+    align-items: end;
+}
+
+.msgLebel {
+    font-family: cursive;
+    font-weight: 900;
+}
