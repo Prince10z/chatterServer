@@ -5,7 +5,15 @@ const app = express();
 const cors = require("cors");
 app.use(
   cors({
-    origin: "https://chatterserver.onrender.com", // Replace with your frontend domain
+    origin: (origin, callback) => {
+      const allowedOrigins = ["https://chatterserver.onrender.com"];
+      if (allowedOrigins.includes(origin) || !origin) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+    methods: ["GET", "POST", "PUT", "DELETE"],
   })
 );
 const server = http.createServer(app);
